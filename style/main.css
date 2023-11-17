@@ -1,0 +1,274 @@
+*,
+div {
+    position: relative
+}
+
+* {
+    user-select: none
+}
+
+input[type="file"],
+input[type="checkbox"],
+
+button {
+    -webkit-tap-highlight-color: transparent !important
+}
+
+div.inputDisable div.filename {
+    user-select: none
+}
+
+div.header,
+div.title {
+    font-family: minecraft-ten
+}
+
+a.link,
+div.description,
+div.filename a,
+div.title {
+    user-select: text
+}
+
+a.link,
+button,
+input {
+    cursor: pointer
+}
+
+* {
+    font-family: minecraft;
+    color: #000;
+    font-size: 14px
+}
+
+body {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #222
+}
+
+
+body {
+/*  background-image: url('/img/mcpreview.png');  */
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: 0 0; 
+  background-color: 171717
+}
+
+body::-webkit-scrollbar {
+    width: 5px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #69696967
+}
+
+div.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #dfdfdf;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    z-index: 100;
+    font-size: 25px;
+    position: sticky;
+    border-bottom: 4px solid #a4a4a4
+}
+
+button,
+div.content,
+div.selectedButton {
+    position: relative
+}
+
+div.content {
+    outline: #19191975 solid 4px;
+    left: 50%;
+    padding: 5px 20px;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1000px;
+    max-width: calc(100% - 55px);
+    border-top: 4px solid #4e4d4d75;
+    border-bottom: 4px solid #28282875;
+    background-color: #0008
+}
+
+div.selectedButton {
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid #282828;
+    margin-bottom: 10px
+}
+
+div.selectedButton a {
+    color: #fff
+}
+
+button {
+    top: 1px;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    border: 1px solid #3E3E3E;
+    background-color: #EBEBEB;
+    border-bottom: 3px solid #535353;
+    outline: #111111 solid 2px
+}
+
+button:hover {
+    background-color: #B4B2B2
+}
+
+button:active {
+    top: 4px;
+    height: 31px;
+    border-bottom: 4px solid #535353;
+    background-color: #adadad
+}
+
+input {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 35px;
+    opacity: 0
+}
+
+#whiteButton {
+	  text-shadow: 0px 0px 0px #000000;
+    height: 40px;
+    position: relative;
+    width: 40%
+}
+
+#whiteButton {
+  text-shadow: 0px 0px 0px #000000;
+  height: 40px;
+  width: 40%;
+  border: 2px solid #3D3D3D;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+#greenButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 40%;
+  background-color: #3FA300;
+  border: 2px solid #3D3D3D;
+  color: #FFFFFF;
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  display: inline-block;
+  padding: 10px; 
+}
+
+#greenButton:hover {
+  background-color: #2E7D00; 
+}
+
+#redButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 40%;
+  background-color: #de0000;
+  border: 2px solid #3D3D3D;
+  color: #FFFFFF;
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  display: inline-block;
+  padding: 10px; 
+}
+
+#redButton:hover {
+  background-color: #bf0000; 
+}
+
+
+#purpleButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 40%;
+  background-color: #c400cf;
+  border: 2px solid #3D3D3D;
+  color: #FFFFFF;
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  display: inline-block;
+  padding: 10px; 
+}
+
+#purpleButton:hover {
+  background-color: #a704b0; 
+}
+
+
+
+div.description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc(100% - 20px);
+    color: #fff;
+    padding: 10px;
+    background-color: #0008
+}
+
+div.title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 2px
+}
+
+a.link {
+    color: #08f;
+     font-family: minecraft-five;
+}
+
+a.link:hover {
+    color: #10f
+}
+
+button.closeButton {
+    width: 40px;
+    height: 40px;
+    padding: none;
+    border: none;
+    outline: none;
+    top: -65px;
+    transform: translateX(calc(-100% + 15px));
+    left: 100%;
+    background-color: #0000;
+}
+
+button.closeButton:hover {
+    background-color: #FFF6;
+}
+
+button.closeButton a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: #FFF;
+    transform: translateX(-50%)translateY(-50%);
+}
