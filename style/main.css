@@ -226,6 +226,7 @@ input {
 div.description {
     margin-top: 5px;
     margin-bottom: 5px;
+    height: calc(auto + 10px);
     width: calc(100% - 20px);
     color: #fff;
     padding: 10px;
@@ -270,4 +271,49 @@ button.closeButton a {
     font-size: 25px;
     color: #FFF;
     transform: translateX(-50%)translateY(-50%);
+}
+
+select {
+    top: 1px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    border: 1px solid #3E3E3E;
+    background-color: #EBEBEB;
+    border-bottom: 3px solid #535353;
+    outline: #111111 solid 2px
+}
+
+select:hover {
+    background-color: #B4B2B2
+}
+
+select:active {
+    top: 4px;
+    height: 40px;
+    border-bottom: 4px solid #535353;
+    background-color: #adadad
+}
+
+option.Diamond {
+    top: 1px;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    border: 1px solid #3E3E3E;
+    background-color: #EBEBEB;
+    border-bottom: 3px solid #535353;
+    outline: #111111 solid 2px
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 18px; 
+  height: 18px; 
+  background: url('/img/cursor.png') no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 10000;
 }
