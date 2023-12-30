@@ -7,6 +7,7 @@ div {
     user-select: none
 }
 
+
 input[type="file"],
 input[type="checkbox"],
 
@@ -77,66 +78,26 @@ div.header {
     height: 30px;
     background-color: #dfdfdf;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     z-index: 100;
-    font-size: 25px;
-    position: sticky;
+    font-size: 35px;
+    position: static;
     border-bottom: 4px solid #a4a4a4
 }
 
 button,
-div.content,
-div.selectedButton {
+div.content {
     position: relative
 }
 
 div.content {
-    outline: #19191975 solid 4px;
-    left: 50%;
-    padding: 5px 20px;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 1000px;
-    max-width: calc(100% - 55px);
-    border-top: 4px solid #4e4d4d75;
-    border-bottom: 4px solid #28282875;
-    background-color: #0008
-}
-
-div.selectedButton {
-    width: 100%;
-    height: 60px;
-    border-bottom: 3px solid #282828;
-    margin-bottom: 10px
-}
-
-div.selectedButton a {
-    color: #fff
-}
-
-button {
-    top: 1px;
-    height: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: absolute;
-    border: 1px solid #3E3E3E;
-    background-color: #EBEBEB;
-    border-bottom: 3px solid #535353;
-    outline: #111111 solid 2px
-}
-
-button:hover {
-    background-color: #B4B2B2
-}
-
-button:active {
-    top: 4px;
-    height: 31px;
-    border-bottom: 4px solid #535353;
-    background-color: #adadad
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  padding: 15px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
 }
 
 input {
@@ -147,94 +108,20 @@ input {
     opacity: 0
 }
 
-#whiteButton:hover {
-	  text-shadow: 0px 0px 0px #000000;
-    height: 40px;
-    position: relative;
-    width: 100%
-}
-
-#whiteButton {
-  text-shadow: 0px 0px 0px #000000;
-  height: 40px;
-  width: 100%;
-  border: 2px solid #3D3D3D;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  
-}
-
-#greenButton {
-  text-shadow: 1px 1px 0.9px #000000;
-  height: 40px;
-  width: 100%;
-  background-color: #3FA300;
-  border: 2px solid #3D3D3D;
-  color: #FFFFFF;
-  font-size: 16px; 
-  cursor: pointer; 
-  position: relative;
-  display: inline-block;
-  padding: 10px; 
-}
-
-#greenButton:hover {
-  background-color: #2E7D00; 
-}
-
-#redButton {
-  text-shadow: 1px 1px 0.9px #000000;
-  height: 40px;
-  width: 100%;
-  background-color: #de0000;
-  border: 2px solid #3D3D3D;
-  color: #FFFFFF;
-  font-size: 16px; 
-  cursor: pointer; 
-  position: relative;
-  display: inline-block;
-  padding: 10px; 
-}
-
-#redButton:hover {
-  background-color: #9B0303; 
-}
-
-
-#purpleButton {
-  text-shadow: 1px 1px 0.9px #000000;
-  height: 40px;
-  width: 100%;
-  background-color: #c400cf;
-  border: 2px solid #3D3D3D;
-  color: #FFFFFF;
-  font-size: 16px; 
-  cursor: pointer; 
-  position: relative;
-  display: inline-block;
-  padding: 10px; 
-}
-
-#purpleButton:hover {
-  background-color: #7A0181; 
-}
-
 
 div.description {
-    margin-top: 5px;
+   margin-top: 5px;
     margin-bottom: 5px;
     height: calc(auto + 10px);
     width: calc(100% - 20px);
     color: #fff;
     padding: 10px;
-    background-color: #0008
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
 }
 
 div.title {
-    color: #fff;
+    color: #FFFFFF; 
     font-size: 20px;
     margin-bottom: 2px
 }
@@ -248,72 +135,152 @@ a.link:hover {
     color: #10f
 }
 
-button.closeButton {
-    width: 40px;
+.content-modal {
+  display: flex;
+  min-height: fill;
+}
+
+.dialog-modal {
+  margin-top: 15px;
+  max-width: 500px;
+}
+
+.dialog-modal-wrapper {
+  margin-inline: 20px;
+  border: 2px solid #000000;
+}
+
+.dialog-header {
+  display: flex;
+  padding: 10px;
+  background-color: #505050;
+  border: 2px solid #5e5e5e;
+}
+
+.dialog-content {
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  padding: 15px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+.dialog-bottom-content {
+  display: flex;
+  padding: 2.5px;
+  min-height: 40px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+.button {
+  margin: auto;
+  border: 2px solid #000000;
+}
+
+.button:hover {
+  margin: auto;
+  border: 2px solid #00000000;
+}
+
+
+#whiteButton:hover {
+    top: 2px;
     height: 40px;
-    padding: none;
-    border: none;
-    outline: none;
-    top: -65px;
-    transform: translateX(calc(-100% + 15px));
-    left: 100%;
-    background-color: #0000;
+    width: 100%;
+    position: relative;
+    color: #262626;
+    background-color: #A0A0A0;
 }
 
-button.closeButton:hover {
-    background-color: #FFF6;
+#whiteButton {
+  height: 40px;
+  width: 100%; 
+  border: 2px solid #3D3D3D;
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 0px rgba(16,59,11,1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin:auto;
 }
 
-button.closeButton a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 25px;
-    color: #FFF;
-    transform: translateX(-50%)translateY(-50%);
-}
-
-select {
-    top: 1px;
+#greenButton:hover { 
+    background-color: #14520D;
+    top: 2px;
     height: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: absolute;
-    border: 1px solid #3E3E3E;
-    background-color: #EBEBEB;
-    border-bottom: 3px solid #535353;
-    outline: #111111 solid 2px
+    width: 100%;
+    position: relative;
 }
 
-select:hover {
-    background-color: #B4B2B2
+#greenButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  background-color: #19770E;
+  color: #FFFFFF;
+  height: 40px;
+  width: 100%; 
+  background-color: #19770E;
+  border: 2px solid #15821B;
+  box-shadow: 0px 3px 0px rgba(16,59,11,1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin:auto;
 }
 
-select:active {
-    top: 4px;
-    height: 40px;
-    border-bottom: 4px solid #535353;
-    background-color: #adadad
+
+#redButton:hover {
+  top: 2px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background-color: #B60000;
 }
 
-option.Diamond {
-    top: 1px;
-    height: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: absolute;
-    border: 1px solid #3E3E3E;
-    background-color: #EBEBEB;
-    border-bottom: 3px solid #535353;
-    outline: #111111 solid 2px
+#redButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #4B0000;
+  border: 2px solid #8E2727;
+  background-color: #FF3838;
+  box-shadow: 0px 3px 0px rgba(16, 59, 11, 1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  margin: auto;
 }
 
-.custom-cursor {
-  position: absolute;
-  width: 18px; 
-  height: 18px; 
-  background: url('/img/cursor.png') no-repeat;
-  background-size: cover;
-  pointer-events: none;
-  z-index: 10000;
+#purpleButton:hover {
+  top: 2px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background-color: #A200B6;
+}
+
+#purpleButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #3D004B;
+  border: 2px solid #78278E;
+  background-color: #EE38FF;
+  box-shadow: 0px 3px 0px rgba(16, 59, 11, 1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  margin: auto;
 }
