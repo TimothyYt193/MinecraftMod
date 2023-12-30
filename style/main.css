@@ -1,0 +1,286 @@
+*,
+div {
+    position: relative
+}
+
+* {
+    user-select: none
+}
+
+
+input[type="file"],
+input[type="checkbox"],
+
+button {
+    -webkit-tap-highlight-color: transparent !important
+}
+
+div.inputDisable div.filename {
+    user-select: none
+}
+
+div.header,
+div.title {
+    font-family: minecraft-ten
+}
+
+a.link,
+div.description,
+div.filename a,
+div.title {
+    user-select: text
+}
+
+a.link,
+button,
+input {
+    cursor: pointer
+}
+
+* {
+    font-family: minecraft;
+    color: #000;
+    font-size: 14px
+}
+
+body {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #222
+}
+
+
+body {
+/*  background-image: url('/img/mcpreview.png');  */
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: 0 0; 
+  background-color: 171717
+}
+
+body::-webkit-scrollbar {
+    width: 5px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #69696967
+}
+
+div.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #dfdfdf;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 100;
+    font-size: 35px;
+    position: static;
+    border-bottom: 4px solid #a4a4a4
+}
+
+button,
+div.content {
+    position: relative
+}
+
+div.content {
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  padding: 15px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+input {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 35px;
+    opacity: 0
+}
+
+
+div.description {
+   margin-top: 5px;
+    margin-bottom: 5px;
+    height: calc(auto + 10px);
+    width: calc(100% - 20px);
+    color: #fff;
+    padding: 10px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+div.title {
+    color: #FFFFFF; 
+    font-size: 20px;
+    margin-bottom: 2px
+}
+
+a.link {
+    color: #08f;
+     font-family: minecraft-five;
+}
+
+a.link:hover {
+    color: #10f
+}
+
+.content-modal {
+  display: flex;
+  min-height: fill;
+}
+
+.dialog-modal {
+  margin-top: 15px;
+  max-width: 500px;
+}
+
+.dialog-modal-wrapper {
+  margin-inline: 20px;
+  border: 2px solid #000000;
+}
+
+.dialog-header {
+  display: flex;
+  padding: 10px;
+  background-color: #505050;
+  border: 2px solid #5e5e5e;
+}
+
+.dialog-content {
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  padding: 15px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+.dialog-bottom-content {
+  display: flex;
+  padding: 2.5px;
+  min-height: 40px;
+  background-color: #262626;
+  border-bottom: 2px solid #383838;
+}
+
+.button {
+  margin: auto;
+  border: 2px solid #000000;
+}
+
+.button:hover {
+  margin: auto;
+  border: 2px solid #00000000;
+}
+
+
+#whiteButton:hover {
+    top: 2px;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    color: #262626;
+    background-color: #A0A0A0;
+}
+
+#whiteButton {
+  height: 40px;
+  width: 100%; 
+  border: 2px solid #3D3D3D;
+  border: 2px solid #DCDCDC;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 0px rgba(16,59,11,1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin:auto;
+}
+
+#greenButton:hover { 
+    background-color: #14520D;
+    top: 2px;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+#greenButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  background-color: #19770E;
+  color: #FFFFFF;
+  height: 40px;
+  width: 100%; 
+  background-color: #19770E;
+  border: 2px solid #15821B;
+  box-shadow: 0px 3px 0px rgba(16,59,11,1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin:auto;
+}
+
+
+#redButton:hover {
+  top: 2px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background-color: #B60000;
+}
+
+#redButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #4B0000;
+  border: 2px solid #8E2727;
+  background-color: #FF3838;
+  box-shadow: 0px 3px 0px rgba(16, 59, 11, 1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+#purpleButton:hover {
+  top: 2px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background-color: #A200B6;
+}
+
+#purpleButton {
+  text-shadow: 1px 1px 0.9px #000000;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #3D004B;
+  border: 2px solid #78278E;
+  background-color: #EE38FF;
+  box-shadow: 0px 3px 0px rgba(16, 59, 11, 1);
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  margin: auto;
+}
