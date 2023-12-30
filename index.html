@@ -1,13 +1,12 @@
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Minecraft Mod</title>
-
     <link rel="stylesheet" href="./style/main.css">
     <link rel="icon" type="image/x-icon" href="./web/ytlogo.png">
-
     <style>
         @font-face {
             font-family: minecraft;
@@ -27,8 +26,7 @@
 </head>
 
 <body>
-    <div class="custom-cursor"></div>
-    <div class="header">Minecraft Mod</div>
+    <div class="header">Minecraft Mod</div> 
     <div class="content">
         <div class="description">Website for Minecraft Mod, Addons and Apps made by T1M0THYYT<br>+
             Creator: <a href="https://www.youtube.com/@T1M0THYYT" target="_blank" class="link">T1M0THY YT</a>
@@ -38,32 +36,18 @@
         <div class="description">
             <div class="title">What is Minecraft Mod?</div>Minecraft Mod is a modified version of mcpe with custom ui's created by T1M0THYYT with the help of other creators.
         </div>
-
+        <div class="description">
+            <div class="button"><button id="greenButton" onClick="onClick();">Green Button</button></div>
+            <div class="button"><button id="whiteButton" onClick="onClick();">White Button</button></div>
+            <div class="button"><button id="redButton" onClick="onClick();">Red Button</button></div>
+            <div class="button"><button id="purpleButton" onclick="onClick();">Purple Button</button></div>
+        </div>
 
         <div class="description">
-        <div class="button"><button id="greenButton" onClick="onClick()">Green Button</button></div>
-        <div class="button"><button id="whiteButton" onClick="onClick(); console.warn('This is console.warn')">White Button</button></div>
-        <div class="button"><button id="redButton" onClick="onClick(); console.error('This is console.error')">Red Button</button></div>
-        <div class="button"><button id="purpleButton" onclick="onClick()">Purple Button</button></div>
+            <div class="title">Download Page</div>This going to change in later updates.<div class="button"><button id="greenButton" onClick="onClick(); openWebsite('./pages/downloads.html')">Downloads</button></div>
         </div>
-        
-         <div class="description">
-            <div class="title">Download Page</div>This is subect to change<div class="button"><button id="greenButton" onClick="onClick(); openWebsite('./pages/downloads.html')">Downloads</button></div>
-        </div>
-
-         <div class="description"> 
-         <div class="title">Dropdown Menu</div>Test <div><select id="oreDropdown" onClick="onClick()" class="button">
-           <option value="diamond">Diamond</option>
-           <option value="gold">Gold</option>
-           <option value="iron">Iron</option>
-           <option value="redstone">Redstone</option>
-           <option value="ni1029293939349gg">null</option>
-          </div> </select> </div>
-         
-       
-  </div>
-        
     </div>
+
     <script src="./scripts/main.js"></script>
 </body>
 
